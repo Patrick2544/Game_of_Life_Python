@@ -1,0 +1,68 @@
+Terminal Test:
+
+Start with:
+
+venv/Scripts/Activate
+>>>python
+
+
+1) Blinker Pattern
+
+1.1) Test coordinates
+
+from Game_of_Life import grid, patterns
+
+blinker = patterns.Pattern("Blinker", {(2, 1), (2, 2), (2, 3)})
+grid = grid.LifeGrid(blinker)
+print(grid)
+
+
+
+grid.evolve()
+print(grid)
+
+
+
+grid.evolve()
+print(grid)
+
+1.2) Test grid viewer
+
+from Game_of_Life import grid, patterns
+
+blinker = patterns.Pattern("Blinker", {(2, 1), (2, 2), (2, 3)})
+grid = grid.LifeGrid(blinker)
+
+print(grid.as_string((0, 0, 5, 5)))
+
+
+
+
+
+
+
+grid.evolve()
+print(grid.as_string((0, 0, 5, 5)))
+
+1.3) Test calling pattern(s) from TOML 
+
+from Game_of_Life import patterns
+
+patterns.get_pattern("Blinker")
+
+
+patterns.get_all_patterns()
+
+
+1.4)
+
+from Game_of_Life.views import CursesView
+from Game_of_Life.patterns import get_pattern
+
+CursesView(get_pattern("Blinker"), gen=100).show()
+
+End with:
+
+>>>exit()
+deactivate
+

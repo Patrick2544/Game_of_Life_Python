@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64.0.0","Wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Game_of_Life_Python"
+dynamic = ["version"]
+description = "Conway's Game of Life in your terminal"
+readme  = "README.md"
+authors = [{ name = "Jittapatana (Patrick) Prayoonpruk", email = "jitta.patrick@gmail.com" }]
+dependencies = [
+    'tomli;python_version < "3.10"',
+]
+
+[project.scripts]
+Game_of_Life = "Game_of_Life.__main__:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "Game_of_Life.__version__"}
