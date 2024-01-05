@@ -66,7 +66,7 @@ This is the command for the example output at the beginning of this file:
 
         Game_of_Life -p "Glider Gun" -g 100
 
-other commands can be found in cli.py file
+other commands can be found in [cli.py](https://github.com/Patrick2544/Game_of_Life_Python/blob/main/Game_of_Life/cli.py) file
 
 Here is the brief information
 
