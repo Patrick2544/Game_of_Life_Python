@@ -9,3 +9,12 @@ The Game of Life, also known simply as Life, is a cellular automaton devised by 
 
 ![วิดีโอไม่มีชื่อ - สร้างด้วย Clipchamp](https://github.com/Patrick2544/Game_of_Life_Python/assets/52234759/bfbbf4be-bbf7-4ffe-bcae-2050315da068)
 ---
+
+# Rules
+The Game of Life is an infinite, two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, live or dead (populated and unpopulated, respectively)
+
+The rules of how cells evolve:
+
+        1) Alive cells die if they have fewer than two (underpopulation) or more than three living neighbors (overpopulation).
+        2) Alive cells stay alive if they have two or three living neighbors.
+        3) Dead cells with exactly three living neighbors become alive (reproduction).
