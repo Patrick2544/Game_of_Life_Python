@@ -18,3 +18,78 @@ The rules of how cells evolve:
         1) Alive cells die if they have fewer than two (underpopulation) or more than three living neighbors (overpopulation).
         2) Alive cells stay alive if they have two or three living neighbors.
         3) Dead cells with exactly three living neighbors become alive (reproduction).
+
+# Getting Started
+The project uses [Curses](https://docs.python.org/3/howto/curses.html), which is a library in python. Please Note that Curses might not work well with Windows.
+
+## Curses Installation
+
+For Python 3:
+
+        pip3 install windows-curses
+
+For Python 2:
+
+        pip install window-curses
+
+macOS and linux systems typically includes the curses module in the Python installation.
+
+Check for curses:
+
+        python -c "import curses"
+
+## Set up a python virtual environment
+
+For more details information please [click here](https://docs.python.org/3/library/venv.html)
+
+For Windows:
+
+        python -m venv venv
+        venv\Scripts\activate
+
+For macOs and Linux systems:
+
+        python -m venv venv
+        source venv/bin/activate
+
+## install Game of Life
+install the project in a dedicated Python virtual environment according to the pyproject.toml file
+
+For all systems:
+
+        python -m pip install -e .
+
+## Run Game of Life
+Once the project has been installed according to the command above, now you can run a project directly using the following commands
+
+This is the command for the example output at the beginning of this file:
+
+        Game_of_Life -p "Glider Gun" -g 100
+
+other commands can be found in cli.py file
+
+Here is the brief information
+
+set a specific version
+
+        --version 
+
+get a specific pattern:
+
+        -p or --pattern "pattern's name"
+
+get all patterns:
+
+        -a or --all
+
+set a specific life grid view:
+
+        -v or --view "NameView"
+
+set a number of life grid generations
+
+        -g or --gen #number
+
+set frame rate per second
+
+        -f or --fps #number
