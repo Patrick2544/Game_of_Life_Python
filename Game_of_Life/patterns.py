@@ -17,7 +17,7 @@ class Pattern:
             alive_cells={tuple(cell) for cell in toml_data["alive_cells"]},
         )
 
-'''j
+'''
 from dataclasses import dataclass
 
 @dataclass
